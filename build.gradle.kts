@@ -7,7 +7,7 @@ version = "0.0.1-SNAPSHOT"
 
 java {
     toolchain {
-        languageVersion = JavaLanguageVersion.of(21)
+        languageVersion = JavaLanguageVersion.of(17)
     }
 }
 
@@ -20,7 +20,7 @@ object Version {
 }
 
 dependencies {
-    runtimeOnly("org.jetbrains.kotlinx:kotlinx-coroutines-core:${Version.COROUTINE}")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:${Version.COROUTINE}")
 
     testImplementation(kotlin("test"))
 }
